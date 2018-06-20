@@ -1,0 +1,30 @@
+<script>
+  $('#content').removeClass("col-md-9 col-md-push-3");
+  $('#left-menu').empty();
+  $('.menu-container').empty();
+</script>
+
+<div id="grid2" class="shuffle--container shuffle--fluid"> </div>
+
+
+<script id="demo-template" type="text/x-handlebars-template">
+{{#each items}}
+  <div class="grid__brick col-md-6" data-groups='[{{data-group}}]'>
+    <div class="col-xs-3 col-md-3">
+      <img class="img-responsive" data-src="{{image_url}}" alt="100%x200" src="{{image_url}}">
+    </div>
+    <div class="col-md-9">
+      <h3 class="demo-title">{{title}}</h3>
+      <p>{{description}}</p>
+      <p><a href="{{live_demo_link}}" class="btn btn-primary" role="button">{{buttonText}}</a> <a href="{{learn_link}}" class="btn btn-default" role="button">Learn</a></p>
+    </div>
+  </div>
+{{/each}}
+</script>
+
+<script type="text/javascript" src="/js/demo_data.js"></script>
+<script type="text/javascript" src="/js/demos.js"></script>
+
+<h3>More cool Demos using the power of FME:</h3>
+<a href="https://s3-us-west-2.amazonaws.com/safe-scenarios/StreamingServices/ShowMyTrip/MyTripForm.htm">MyTripForm</a></br>
+<a href="https://s3-us-west-2.amazonaws.com/safe-scenarios/StreamingServices/ShowMyTrip/MyTripForm.htm">Another MyTripForm</a>
